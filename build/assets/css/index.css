@@ -1,0 +1,700 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: AvenirNextBold;
+}
+
+header {
+    background-color: whitesmoke;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    opacity: 0.8;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 2px;
+    color: #7b5f5f;
+}
+
+.logo-header {
+    display: block;
+    position: fixed;
+    left: 3vw;
+    top: 6px;
+    font-size: 25px;
+    cursor: pointer;
+    font-family: AvenirNextBold;
+    color: rgb(53, 53, 53);
+    font-weight: bold;
+}
+
+#sidebar {
+    background: #151718;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    right: -200px;
+    top: 0px;
+    margin-right: -8px;
+    transition: right 0.3s linear;
+}
+
+#sidebar-close {
+    background: #1C1E1F;
+    color: darkgrey;
+    width: 60px;
+    text-decoration: none;
+    padding-top: 2px;
+    font-size: 40px;
+    margin-top: -6px;
+    border: none;
+    display: block;
+}
+
+ul button:hover {
+    background-color: white;
+    opacity: 0.5;
+    border-bottom: 1px solid #111;
+    color: orangered;
+}
+
+#sidebar.visible {
+    right: 0px;
+    transition: right 0.3s linear;
+}
+
+ul {
+    margin: 0px;
+    padding-top: 10px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a:hover {
+    background-color: snow;
+    opacity: 0.5;
+}
+
+ul li a {
+    background: #1C1E1F;
+    color: darkgrey;
+    display: block;
+    width: 180px;
+    padding: 10px;
+    border-bottom: 1px solid #111;
+    text-decoration: none;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+#sidebar-btn {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+    margin: 10px;
+    float: right;
+    position: absolute;
+    top: 6px;
+    left: -60px;
+}
+
+#sidebar-btn span {
+    height: 2.5px;
+    background: #111;
+    margin-bottom: 5px;
+    display: block;
+    float: right;
+    margin-right: 15px;
+}
+
+#sidebar-btn span:nth-child(1) {
+    width: 100%;
+}
+
+#sidebar-btn span:nth-child(2) {
+    width: 75%;
+}
+
+#sidebar-btn span:nth-child(3) {
+    width: 50%;
+}
+
+/*Sections style*/
+
+.col-container {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.col-favorite {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.col {
+    display: inline-block;
+    padding: 16px;
+    width: 8%;
+}
+
+.col p {
+    font-size: 16px;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3.6em;
+}
+
+img {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.intro-page {
+    background: url(../images/int.jpg) no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.container {
+    display: inline-block;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+
+.introA {
+    font-size: 130px;
+    white-space: nowrap;
+    font-family: AvenirNextBold;
+}
+
+.introB {
+    font-size: 47px;
+    font-family: AvenirNextBold;
+    margin-top: -15%;
+}
+
+.contSport,
+.contArt,
+.contPolitics,
+.contBusiness {
+    font-family: AvenirNextBold;
+    box-sizing: border-box;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.intSport,
+.intArt,
+.intPolitics,
+.intBusiness {
+    font-size: 100px;
+    color: gainsboro;
+}
+
+.sport-int-page,
+.art-int-page,
+.politics-int-page,
+.business-int-page {
+    background-color: azure;
+}
+
+#sport-section,
+#art-section,
+#politics-section,
+#business-section {
+    border-image: linear-gradient(to right, grey 0%, red 100%);
+    border-image-slice: 2;
+    margin: auto;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    box-shadow: 15px 15px 40px rgba(25, 38, 51, 0.4);
+    text-align: center;
+}
+
+.sport-page {
+    background: url(../images/sp.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.art-page {
+    background: url(../images/artOne.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.politics-page {
+    background: url(../images/politics.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.business-page {
+    background: url(../images/business.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.login-int-page {
+    background-color: azure;
+}
+
+#login-section {
+    border-image: linear-gradient(to right, grey 0%, red 100%);
+    border-image-slice: 2;
+    margin: auto;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    box-shadow: 15px 15px 40px rgba(25, 38, 51, 0.4);
+    text-align: center;
+}
+
+.login-page {
+    background: url(../images/login.jpg) no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+#login .box {
+    margin: 0 auto;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    box-shadow: 15px 15px 40px rgba(25, 38, 51, 0.4);
+    text-align: center;
+}
+
+#login p {
+    margin-bottom: 10px;
+    margin-top: 15px;
+    font-family: AvenirNextBold;
+
+}
+
+#login legend {
+    font-size: 45px;
+    font-family: AvenirNextBold;
+    font-weight: 1000;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#login input {
+    margin-top: 15px;
+    width: 70%;
+    max-width: 200px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+#login button {
+    height: 25px;
+    background-color: gainsboro;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+#login button:hover {
+    background: #cccccc;
+}
+
+#result-section {
+    border-image: linear-gradient(to right, grey 0%, red 100%);
+    border-image-slice: 2;
+    margin: auto;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    box-shadow: 15px 15px 40px rgba(25, 38, 51, 0.4);
+    text-align: center;
+}
+
+#result-section-favorites {
+    border-image: linear-gradient(to right, grey 0%, red 100%);
+    border-image-slice: 2;
+    margin: auto;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    box-shadow: 15px 15px 40px rgba(25, 38, 51, 0.4);
+    text-align: center;
+}
+
+#result-section-favorites h2 {
+    font-size: 28px;
+    margin-top: 28px;
+}
+
+#result-section-favorites h3 {
+    font-weight: bold;
+}
+
+.deleteItemButton {
+    color: darkslategray;
+    border: none;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    margin-top: 10px;
+    float: left;
+}
+
+.addToFavListButton {
+    color: darkslategray;
+    border: none;
+    font-size: 20px;
+    background: rgba(255, 244, 255, -0.1);
+    margin-top: 10px;
+    float: left;
+}
+
+.result-page {
+    background: url(../images/result.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.fa fa-plus-square-o {}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1024px) {
+    .col {
+        width: 18%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    #intro-section {
+        width: 4%;
+    }
+
+    #intro-section .container {
+        margin-top: 80px;
+    }
+
+    .container h1 {
+        font-size: 45px;
+        margin-left: 30px;
+        margin-top: 110px;
+        padding-bottom: 70px;
+        font-weight: 550;
+    }
+
+    .container h2 {
+        font-size: 35px;
+        margin-left: 30px;
+        margin-bottom: 60px;
+        padding-top: 4px;
+    }
+
+    .container h4 {
+        margin-left: 30px;
+        margin-top: -30px;
+        font-size: 20px;
+    }
+
+    .intSport,
+    .intArt,
+    .intPolitics,
+    .intBusiness {
+        font-size: 80px;
+    }
+
+    #sport-section,
+    #art-section,
+    #politics-section,
+    #business-section,
+    #result-section,
+    #login-section {
+        width: 77%;
+        padding: 18px;
+    }
+
+    #sidebar-btn span {
+        margin-right: -2px;
+    }
+
+    #sidebar-btn {
+        margin-top: 10px;
+    }
+
+    #login_form .box {
+        width: 60%;
+    }
+
+    .box,
+    .leg {
+        font-size: 12px;
+    }
+
+    #login-section {
+        height: 68%;
+    }
+
+    .hidden {
+        visibility: hidden;
+    }
+
+    img {
+        width: 120px;
+    }
+
+    .col-container {
+        display: block;
+        content: "";
+        clear: both;
+        padding: 10px;
+    }
+
+    .col {
+        display: inline-block;
+        padding: 2px;
+        margin: 14px;
+        width: 32%;
+    }
+
+    .col p {
+        font-size: 14px;
+        margin: 16px;
+    }
+
+    .col h3 {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    #intro-section {
+        width: 4%;
+    }
+
+    #intro-section .container {
+        margin-top: 80px;
+    }
+
+    .container h1 {
+        font-size: 45px;
+        margin-left: 30px;
+        margin-top: 110px;
+        padding-bottom: 70px;
+        font-weight: 550;
+    }
+
+    .container h2 {
+        font-size: 35px;
+        margin-left: 30px;
+        margin-bottom: 48px;
+        padding-top: 4px;
+    }
+
+    .container h4 {
+        margin-left: 30px;
+        font-size: 20px;
+    }
+
+    .intSport,
+    .intArt,
+    .intPolitics,
+    .intBusiness {
+        font-size: 80px;
+    }
+
+    #sport-section,
+    #art-section,
+    #politics-section,
+    #business-section,
+    #result-section,
+    #login-section {
+        width: 77%;
+        padding: 18px;
+    }
+
+    #sidebar-btn span {
+        margin-right: -2px;
+    }
+
+    #sidebar-btn {
+        margin-top: 10px;
+    }
+
+    #login_form .box {
+        width: 60%;
+    }
+
+    .box,
+    .leg {
+        font-size: 12px;
+    }
+
+    #login-section {
+        height: 68%;
+    }
+
+    .hidden {
+        visibility: hidden;
+    }
+
+    img {
+        width: 120px;
+    }
+
+    .col-container {
+        display: block;
+        content: "";
+        clear: both;
+        padding: 10px;
+    }
+
+    .col {
+        display: inline-block;
+        padding: 2px;
+        margin: 14px;
+        width: 48%;
+
+    }
+
+    .col p {
+        font-size: 14px;
+        margin: 13px;
+    }
+
+    .col h3 {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    #intro-section {
+        width: 4%;
+    }
+
+    #intro-section .container {
+        margin-top: 80px;
+    }
+
+    .container h1 {
+        font-size: 45px;
+        margin-left: 30px;
+        margin-top: 110px;
+        padding-bottom: 70px;
+        font-weight: 550;
+    }
+
+    .container h2 {
+        font-size: 35px;
+        margin-left: 30px;
+        margin-bottom: 70px;
+        padding-top: 10px;
+    }
+
+    .container h4 {
+        margin-left: 30px;
+        margin-top: -30px;
+        font-size: 20px;
+    }
+
+    .intSport,
+    .intArt,
+    .intPolitics,
+    .intBusiness {
+        font-size: 80px;
+    }
+
+    #sport-section,
+    #art-section,
+    #politics-section,
+    #business-section,
+    #result-section,
+    #login-section {
+        width: 70%;
+        padding: 18px;
+    }
+
+    #sidebar-btn span {
+        margin-right: -2px;
+    }
+
+    #sidebar-btn {
+        margin-top: 10px;
+    }
+
+    #login_form .box {
+        width: 60%;
+    }
+
+    .box,
+    .leg {
+        font-size: 12px;
+    }
+
+    #login-section {
+        height: 68%;
+    }
+
+    .hidden {
+        visibility: hidden;
+    }
+
+    img {
+        width: 120px;
+    }
+
+    .col-container {
+        display: block;
+        content: "";
+        clear: both;
+        padding: 10px;
+    }
+
+    .col {
+        display: block;
+        padding: 2px;
+        margin: 14px;
+        width: 86%;
+
+    }
+
+    .col p {
+        font-size: 14px;
+        margin: 13px;
+    }
+
+    .col h3 {
+        font-size: 18px;
+    }
+}

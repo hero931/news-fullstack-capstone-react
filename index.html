@@ -1,0 +1,151 @@
+<DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="News Beast">
+        <meta name="keywords" content="Web app for news">
+        <meta name="author" content="Ilya Andreev">
+        <title>News Beast</title>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/index.css">
+    </head>
+
+    <body>
+        <div id="reactHeader"></div>
+<!--
+        <header role="banner">
+            <div>
+                <span class="logo-header">nb</span>
+            </div>
+            <div id="sidebar">
+                <ul>
+                    <button id="sidebar-close">&times;</button>
+                    <li><a id="home" href="#">Home</a></li>
+                    <li><a id="sports" href="#">Sports</a></li>
+                    <li><a id="arts" href="#">Arts</a></li>
+
+                    <li><a id="politics" href="#">Politics</a></li>
+                    <li><a id="business" href="#">Business</a></li>
+
+                    <li><a id="search" href="#">Search</a></li>
+                    <li><a id="favorite" href="#">Favorite List</a></li>
+                </ul>
+                <div id="sidebar-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+-->
+        <main class="intro-page hide-me">
+            <section id="intro-section">
+                <div class="container">
+                    <h1 class="introA">News Beast</h1>
+                    <h2 class="introB">fresh media</h2>
+                    <h4>In this app you can find the latest news.<br> Also you can find what were the top news on day you were born.<br> Give it a try..</h4>
+                </div>
+            </section>
+        </main>
+        <main class="sport-int-page hide-me">
+            <section id="sport-int-sec">
+                <div class="contSport">
+                    <h1 class="intSport">Sport</h1>
+                </div>
+            </section>
+        </main>
+        <main class="sport-page hide-me">
+            <section id="sport-section">
+                <div class="containerS" id="sport">
+                    <div class="col-container"></div>
+                </div>
+            </section>
+        </main>
+        <main class="art-int-page hide-me">
+            <section id="art-int-sec">
+                <div class="contArt">
+                    <h1 class="intArt">Art</h1>
+                </div>
+            </section>
+        </main>
+        <main class="art-page hide-me">
+            <section id="art-section">
+                <div class="containerA" id="art">
+                    <div class="col-container"></div>
+                </div>
+            </section>
+        </main>
+
+        <!--
+        <main class="politics-int-page hide-me">
+            <section id="politics-int-sec">
+                <div class="contPolitics">
+                    <h1 class="intPolitics">Politics</h1>
+                </div>
+            </section>
+        </main>
+        <main class="politics-page hide-me">
+            <section id="politics-section">
+                <div class="containerP" id="politics">
+                    <div class="col-container"></div>
+                </div>
+            </section>
+        </main>
+        <main class="business-int-page hide-me">
+            <section id="business-int-sec">
+                <div class="contBusiness">
+                    <h1 class="intBusiness">Business</h1>
+                </div>
+            </section>
+        </main>
+        <main class="business-page hide-me">
+            <section id="business-section">
+                <div class="containerB" id="business">
+                    <div class="col-container"></div>
+                </div>
+            </section>
+        </main>
+-->
+        <main class="login-page hide-me">
+            <div class="containerL" id="login">
+                <form id="login_form">
+                    <div class="box">
+                        <legend id="leg">Search</legend>
+                        <h2>Curious what was the topic news across US on your birthday? </h2>
+                        <br>
+                        <h3>Please type in your date in format shown below</h3>
+                        <br>
+                        <input type="date" id="loginDate" min="19000101" max="20180101" placeholder="yyyymmdd" required>
+                        <br>
+                        <button type="submit" id="login_submit" class="button_submit">Let's go</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <main class="result-page hide-me">
+            <section id="result-section">
+                <div class="containerR" id="result">
+                    <div class="col-container"></div>
+                </div>
+            </section>
+
+        </main>
+        <main class="result-favorite-page hide-me">
+            <section id="result-section-favorites">
+                <h2>Favorite List</h2>
+                <h3>Please see below list of your favorite news</h3>
+                <hr>
+                <div class="containerF" id="resultF">
+                    <div class="col-favorite"></div>
+                </div>
+            </section>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="assets/client.js" type="text/javascript"></script>
+        <script src="index.js" type="text/javascript"></script>
+    </body>
+
+    </html>
+</DOCTYPE>
