@@ -60,6 +60,10 @@
 	
 	var _header2 = _interopRequireDefault(_header);
 	
+	var _intro = __webpack_require__(547);
+	
+	var _intro2 = _interopRequireDefault(_intro);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var render = _reactDom2.default.render;
@@ -67,6 +71,10 @@
 	
 	document.addEventListener('DOMContentLoaded', function () {
 	    return _reactDom2.default.render(_react2.default.createElement(_header2.default, null), document.getElementById('reactHeader'));
+	});
+	
+	document.addEventListener('DOMContentLoaded', function () {
+	    return _reactDom2.default.render(_react2.default.createElement(_intro2.default, null), document.getElementById('reactIntro'));
 	});
 
 /***/ }),
@@ -66884,6 +66892,73 @@
 	}
 	
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+
+/***/ }),
+/* 547 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.default = Intro;
+	
+	__webpack_require__(58);
+	
+	__webpack_require__(126);
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(12);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _enzyme = __webpack_require__(128);
+	
+	var _enzymeAdapterReact = __webpack_require__(525);
+	
+	var _enzymeAdapterReact2 = _interopRequireDefault(_enzymeAdapterReact);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	(0, _enzyme.configure)({ adapter: new _enzymeAdapterReact2.default() });
+	
+	function Intro(props) {
+	    return _react2.default.createElement(
+	        'main',
+	        { className: 'intro-page hide-me' },
+	        _react2.default.createElement(
+	            'section',
+	            { id: 'intro-section' },
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'container' },
+	                _react2.default.createElement(
+	                    'h1',
+	                    { className: 'introA' },
+	                    'News Beast'
+	                ),
+	                _react2.default.createElement(
+	                    'h2',
+	                    { className: 'introB' },
+	                    'fresh media'
+	                ),
+	                _react2.default.createElement(
+	                    'h4',
+	                    null,
+	                    'In this app you can find the latest news.',
+	                    _react2.default.createElement('br', null),
+	                    ' Also you can find what were the top news on day you were born.',
+	                    _react2.default.createElement('br', null),
+	                    ' Give it a try..'
+	                )
+	            )
+	        )
+	    );
+	}
 
 /***/ })
 /******/ ]);
