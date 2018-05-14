@@ -1,43 +1,38 @@
 # News Beast
 
-News Beast is an interactive full-stack web app that provides to user with the latest sports, politics, business and art news. In addition app lets user to get a top news for specific date, like user's birthday.
+News Beast is an interactive full-stack web app that provides to user with the latest sport and art news. In addition app lets user to get a top news for specific date, like user's birthday.
 
 ## Screenshots
 
 
 LANDING PAGE:
 
-![image](https://github.com/hero931/news-fullstack-capstone/blob/master/github-images/landing.png)
+![image](https://github.com/hero931/news-fullstack-capstone-react/blob/master/github-images/intro.png)
 
 
 SPORTS PAGE:
 
-![image](https://github.com/hero931/news-fullstack-capstone/blob/master/github-images/sport.png)
+![image](https://github.com/hero931/news-fullstack-capstone-react/blob/master/github-images/sports.png)
 
 
 ARTS PAGE:
 
-![image](https://github.com/hero931/news-fullstack-capstone/blob/master/github-images/arts.png)
+![image](https://github.com/hero931/news-fullstack-capstone-react/blob/master/github-images/art.png)
 
 
-POLITICS PAGE:
+FAVORITE LIST:
 
-![image](https://github.com/hero931/news-fullstack-capstone/blob/master/github-images/politics.png)
-
-
-BUSINESS PAGE:
-
-![image](https://github.com/hero931/news-fullstack-capstone/blob/master/github-images/business.png)
+![image](https://github.com/hero931/news-fullstack-capstone-react/blob/master/github-images/fav-list.png)
 
 
 SEARCH PAGE:
 
-![image](https://github.com/hero931/news-fullstack-capstone/blob/master/github-images/search.png)
+![image](https://github.com/hero931/news-fullstack-capstone-react/blob/master/github-images/search.png)
 
 
 RESULTS PAGE:
 
-![image](https://github.com/hero931/news-fullstack-capstone/blob/master/github-images/results.png)
+![image](https://github.com/hero931/news-fullstack-capstone-react/blob/master/github-images/results.png)
 
 ## Use Case
 A bit different approach to see the news based on interest, instead of having mess of all the news on landing page. This way user can focus on specific interest and see all the interest related news. User also have some sort of interaction with app by searching news for specific date (user's birthday)!
@@ -46,11 +41,13 @@ A bit different approach to see the news based on interest, instead of having me
 
 * As an initial visitor I want to land and see what the app is about.
 
-* As a visitor, I want to be able to look for a specific date news.
+* As an initial visitor I want to be able to add certain article to my favorite list.
 
-* As a visitor I want to be able to type in my birthday date and see the results based on search.
+* As an initial visitor I want to be able to remove an article from my favorite list.
 
-* As a user I would like to read the entire article at original source.
+* As an initial visitor I want to be able to type in my birthday date and see the results based on search.
+
+* As an initial visitor I would like to read the entire article at original source.
 
 ## Wireframe
 
@@ -72,7 +69,7 @@ Find a working prototype with Node at https://news-fullstack-capstone.herokuapp.
 
 
 ## Functionality
-When a user starts navigating from the landing page results will be shown up based on interest of the current page. User will be able to read the entire story at original source. Navigating through the search page user will be given an opportunity to type in certain date and see the results on following results page.
+Start navigating from landing page, user will be able to see top sport and art news. Then if wanted user will be able to save certain article to favorite list and read it later on. Moreover when done reading an article user will be able to remove it from the favorite list. User also will be given an option to fill in certain date and get only the results based on search.
 
 ### Front End
 * HTML5
@@ -89,10 +86,7 @@ When a user starts navigating from the landing page results will be shown up bas
 * Mocha and Chai for testing
 
 ### Responsive
-* The app is responsive and optimized for both desktop and mobile viewing and use.
-
-## API Documentation
-API endpoints for the back end include:
+* App is built to be responsive across mobile, tablet, laptop, and desktop screen resolutions.
 
 
 ## Node command lines
@@ -108,4 +102,5 @@ API endpoints for the back end include:
 
 ## Development Roadmap
 Planned additional features and improvements will allow users to:
+* Add more different topics about latest news
 

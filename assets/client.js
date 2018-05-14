@@ -5,7 +5,6 @@ $(document).ready(function () {
     artDataFromNyt();
     politicsDataFromNyt();
     businessDataFromNyt();
-    searchDataFromNyt();
 });
 
 //Open sidebar
@@ -81,7 +80,7 @@ function sportDataFromNyt() {
                 if (dataArrayValue.multimedia.length != 0) {
                     buildTheHtmlOutput += '<img src="' + dataArrayValue.multimedia[0].url + '">';
                 } else {
-                    buildTheHtmlOutput += '<img src="assets/images/no-image.png">';
+                    buildTheHtmlOutput += '<img src="images/no-image.png">';
                 }
                 buildTheHtmlOutput += "</a>";
                 buildTheHtmlOutput += '</div>';
@@ -110,21 +109,21 @@ $(document).on('submit', '.addToSportList', function (event) {
     };
 
     $.ajax({
-            method: 'POST',
-            dataType: 'json',
-            contentType: 'application/json',
-            data: JSON.stringify(sportObject),
-            url: 'https://news-fullstack-capstone.herokuapp.com/add-to-sport-list/',
-        })
+        method: 'POST',
+        dataType: 'json',
+        contentType: 'application/json',
+        data: JSON.stringify(sportObject),
+        url: '/add-to-sport-list/',
+    })
         .done(function (result) {
-            console.log(result);
-            populateFavoriteList();
-        })
+        console.log(result);
+        populateFavoriteList();
+    })
         .fail(function (jqXHR, error, errorThrown) {
-            console.log(jqXHR);
-            console.log(error);
-            console.log(errorThrown);
-        });
+        console.log(jqXHR);
+        console.log(error);
+        console.log(errorThrown);
+    });
 });
 
 //Arts section
@@ -173,7 +172,7 @@ function artDataFromNyt() {
                 if (dataArrayValue.multimedia.length != 0) {
                     buildTheHtmlOutput += '<img src="' + dataArrayValue.multimedia[0].url + '">';
                 } else {
-                    buildTheHtmlOutput += '<img src="assets/images/no-image.png">';
+                    buildTheHtmlOutput += '<img src="images/no-image.png">';
                 }
                 buildTheHtmlOutput += "</a>";
                 buildTheHtmlOutput += '</div>';
@@ -202,21 +201,21 @@ $(document).on('submit', '.addToArtsList', function (event) {
     };
 
     $.ajax({
-            method: 'POST',
-            dataType: 'json',
-            contentType: 'application/json',
-            data: JSON.stringify(artsObject),
-            url: 'https://news-fullstack-capstone.herokuapp.com/add-to-arts-list/',
-        })
+        method: 'POST',
+        dataType: 'json',
+        contentType: 'application/json',
+        data: JSON.stringify(artsObject),
+        url: '/add-to-arts-list/',
+    })
         .done(function (result) {
-            console.log(result);
-            populateFavoriteList();
-        })
+        console.log(result);
+        populateFavoriteList();
+    })
         .fail(function (jqXHR, error, errorThrown) {
-            console.log(jqXHR);
-            console.log(error);
-            console.log(errorThrown);
-        });
+        console.log(jqXHR);
+        console.log(error);
+        console.log(errorThrown);
+    });
 });
 
 //Politics section
@@ -265,7 +264,7 @@ function politicsDataFromNyt() {
                 if (dataArrayValue.multimedia.length != 0) {
                     buildTheHtmlOutput += '<img src="' + dataArrayValue.multimedia[0].url + '">';
                 } else {
-                    buildTheHtmlOutput += '<img src="assets/images/no-image.png">';
+                    buildTheHtmlOutput += '<img src="images/no-image.png">';
                 }
                 buildTheHtmlOutput += "</a>";
                 buildTheHtmlOutput += '</div>';
@@ -294,21 +293,21 @@ $(document).on('submit', '.addToPoliticsList', function (event) {
     };
 
     $.ajax({
-            method: 'POST',
-            dataType: 'json',
-            contentType: 'application/json',
-            data: JSON.stringify(politicsObject),
-            url: 'https://news-fullstack-capstone.herokuapp.com/add-to-politics-list/',
-        })
+        method: 'POST',
+        dataType: 'json',
+        contentType: 'application/json',
+        data: JSON.stringify(politicsObject),
+        url: '/add-to-politics-list/',
+    })
         .done(function (result) {
-            console.log(result);
-            populateFavoriteList();
-        })
+        console.log(result);
+        populateFavoriteList();
+    })
         .fail(function (jqXHR, error, errorThrown) {
-            console.log(jqXHR);
-            console.log(error);
-            console.log(errorThrown);
-        });
+        console.log(jqXHR);
+        console.log(error);
+        console.log(errorThrown);
+    });
 });
 
 
@@ -360,7 +359,7 @@ function businessDataFromNyt() {
                 if (dataArrayValue.multimedia.length != 0) {
                     buildTheHtmlOutput += '<img src="' + dataArrayValue.multimedia[0].url + '">';
                 } else {
-                    buildTheHtmlOutput += '<img src="assets/images/no-image.png">';
+                    buildTheHtmlOutput += '<img src="images/no-image.png">';
                 }
                 buildTheHtmlOutput += "</a>";
                 buildTheHtmlOutput += '</div>';
@@ -389,21 +388,21 @@ $(document).on('submit', '.addToBusinessList', function (event) {
     };
 
     $.ajax({
-            method: 'POST',
-            dataType: 'json',
-            contentType: 'application/json',
-            data: JSON.stringify(businessObject),
-            url: 'https://news-fullstack-capstone.herokuapp.com/add-to-business-list/',
-        })
+        method: 'POST',
+        dataType: 'json',
+        contentType: 'application/json',
+        data: JSON.stringify(businessObject),
+        url: '/add-to-business-list/',
+    })
         .done(function (result) {
-            console.log(result);
-            populateFavoriteList();
-        })
+        console.log(result);
+        populateFavoriteList();
+    })
         .fail(function (jqXHR, error, errorThrown) {
-            console.log(jqXHR);
-            console.log(error);
-            console.log(errorThrown);
-        });
+        console.log(jqXHR);
+        console.log(error);
+        console.log(errorThrown);
+    });
 });
 
 //Favorite section
@@ -417,42 +416,42 @@ $(document).on("click", "#favorite", function (event) {
 function populateFavoriteList() {
     let outcome = $('#result-section-favorites .col-favorite');
     $.ajax({
-            type: 'GET',
-            url: 'https://news-fullstack-capstone.herokuapp.com/populate-favorites-list',
-            dataType: 'json',
-            category: 'sport'
+        type: 'GET',
+        url: '/populate-favorites-list',
+        dataType: 'json',
+        category: 'sport'
 
-        })
+    })
         .done(function (dataOutput) {
-            console.log("inside the populateFavoriteList");
-            console.log(dataOutput);
-            outcome.html("");
-            let buildTheHtmlOutput = "";
-            $.each(dataOutput.items, function (dataArrayKey, dataArrayValue) {
+        console.log("inside the populateFavoriteList");
+        console.log(dataOutput);
+        outcome.html("");
+        let buildTheHtmlOutput = "";
+        $.each(dataOutput.items, function (dataArrayKey, dataArrayValue) {
 
-                buildTheHtmlOutput += '<div class="col">';
-                buildTheHtmlOutput += '<p>' + dataArrayValue.title + '</p><hr>';
-                buildTheHtmlOutput += '<form class="deleteFavoritesListForm">';
-                buildTheHtmlOutput += '<input type="hidden" class="deleteFavoritesListId" value="' + dataArrayValue._id + '" >';
-                buildTheHtmlOutput += '<button type="submit" class="deleteItemButton" value="">';
-                buildTheHtmlOutput += '<i class="fa fa-minus-square-o" aria-hidden="true"></i>';
-                buildTheHtmlOutput += '</button>';
-                buildTheHtmlOutput += '</form>';
-                buildTheHtmlOutput += "<a href='" + dataArrayValue.url + "' target='_blank'>";
-                buildTheHtmlOutput += '<img src="' + dataArrayValue.image + '">';
-                buildTheHtmlOutput += "</a>";
-                buildTheHtmlOutput += '</div>';
+            buildTheHtmlOutput += '<div class="col">';
+            buildTheHtmlOutput += '<p>' + dataArrayValue.title + '</p><hr>';
+            buildTheHtmlOutput += '<form class="deleteFavoritesListForm">';
+            buildTheHtmlOutput += '<input type="hidden" class="deleteFavoritesListId" value="' + dataArrayValue._id + '" >';
+            buildTheHtmlOutput += '<button type="submit" class="deleteItemButton" value="">';
+            buildTheHtmlOutput += '<i class="fa fa-minus-square-o" aria-hidden="true"></i>';
+            buildTheHtmlOutput += '</button>';
+            buildTheHtmlOutput += '</form>';
+            buildTheHtmlOutput += "<a href='" + dataArrayValue.url + "' target='_blank'>";
+            buildTheHtmlOutput += '<img src="' + dataArrayValue.image + '">';
+            buildTheHtmlOutput += "</a>";
+            buildTheHtmlOutput += '</div>';
 
-            });
-            $('.result-favorite-page').show();
-            $(outcome).html(buildTheHtmlOutput);
-
-        })
-        .fail(function (jqXHR, error, errorThrown) {
-            console.log(jqXHR);
-            console.log(error);
-            console.log(errorThrown);
         });
+        $('.result-favorite-page').show();
+        $(outcome).html(buildTheHtmlOutput);
+
+    })
+        .fail(function (jqXHR, error, errorThrown) {
+        console.log(jqXHR);
+        console.log(error);
+        console.log(errorThrown);
+    });
 }
 
 //User will be able to remove item from list
@@ -460,20 +459,20 @@ $(document).on('submit', '.deleteFavoritesListForm', function (event) {
     event.preventDefault();
     var itemIdToDelete = $(this).parent().find('.deleteFavoritesListId').val();
     $.ajax({
-            method: 'DELETE',
-            dataType: 'json',
-            contentType: 'application/json',
-            url: 'https://news-fullstack-capstone.herokuapp.com/delete-from-favorites-list/' + itemIdToDelete,
-        })
+        method: 'DELETE',
+        dataType: 'json',
+        contentType: 'application/json',
+        url: '/delete-from-favorites-list/' + itemIdToDelete,
+    })
         .done(function (result) {
-            populateFavoriteList();
-        })
+        populateFavoriteList();
+    })
         .fail(function (jqXHR, error, errorThrown) {
-            console.log(jqXHR);
-            console.log(error);
-            console.log(errorThrown);
-            sweetAlert('Oops...', 'Please try again', 'error');
-        });
+        console.log(jqXHR);
+        console.log(error);
+        console.log(errorThrown);
+        sweetAlert('Oops...', 'Please try again', 'error');
+    });
 });
 
 
@@ -486,57 +485,58 @@ $(document).on("click", "#search", function (event) {
 });
 
 //Search for a specific date
-function searchDataFromNyt() {
-    $('#login_form').submit(function () {
-        event.preventDefault();
-        //        $('.result-favorite-page').show();
-        //        $('.result-page').show();
-        var test = $("#loginDate").val();
-        console.log(test);
-        var repleacedDateString = test.replace(/-/gi, "");
-        console.log(repleacedDateString);
-        const outcome = $('#result-section .col-container');
-        var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
-        url += '?' + $.param({
-            'api-key': "1b45aab26c4f43869d611a4c1ff2c95d",
-            'q': "news",
-            'end_date': repleacedDateString,
-            'sort': "newest"
-        });
-        $.ajax({
-            url: url,
-            method: 'GET',
-            dataType: "json",
-            type: "GET"
-
-        }).done(function (dataOutput) {
-            console.log(dataOutput);
-            outcome.html("");
-            let count = 0;
-            let buildTheHtmlOutput = "";
-            $.each(dataOutput.response.docs, function (dataArrayKey, dataArrayValue) {
-                count++;
-                if (count <= 10) {
-                    //console.log(count);
-                    buildTheHtmlOutput += '<div class="col">';
-                    buildTheHtmlOutput += '<p>' + dataArrayValue.snippet + '</p><hr>';
-                    buildTheHtmlOutput += "<a href='" + dataArrayValue.web_url + "' target='_blank'>";
-
-                    if (dataArrayValue.multimedia.length != 0) {
-                        buildTheHtmlOutput += '<img src="http://www.nytimes.com/' + dataArrayValue.multimedia[0].url + '">';
-                    } else {
-                        buildTheHtmlOutput += '<img src="assets/images/no-image.png">';
-                    }
-
-                    buildTheHtmlOutput += "</a>";
-                    buildTheHtmlOutput += '</div>';
-                }
-            });
-            $(outcome).html(buildTheHtmlOutput);
-        }).fail(function (jqXHR, error, errorThrown) {
-            console.log(jqXHR);
-            console.log(error);
-            console.log(errorThrown);
-        });
+$(document).on('submit', '#login_form', function (event) {
+    event.preventDefault();
+    //        $('.result-favorite-page').show();
+    //        $('.result-page').show();
+    var test = $("#loginDate").val();
+    console.log(test);
+    var repleacedDateString = test.replace(/-/gi, "");
+    console.log(repleacedDateString);
+    const outcome = $('#result-section .col-container');
+    var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
+    url += '?' + $.param({
+        'api-key': "1b45aab26c4f43869d611a4c1ff2c95d",
+        'q': "news",
+        'end_date': repleacedDateString,
+        'sort': "newest"
     });
-}
+    $.ajax({
+        url: url,
+        method: 'GET',
+        dataType: "json",
+        type: "GET"
+
+    }).done(function (dataOutput) {
+        console.log(dataOutput);
+        //$('#result-section').show();
+        outcome.html("");
+        let count = 0;
+        let buildTheHtmlOutput = "";
+        $.each(dataOutput.response.docs, function (dataArrayKey, dataArrayValue) {
+            count++;
+            if (count <= 10) {
+                //console.log(count);
+                buildTheHtmlOutput += '<div class="col">';
+                buildTheHtmlOutput += '<p>' + dataArrayValue.snippet + '</p><hr>';
+                buildTheHtmlOutput += "<a href='" + dataArrayValue.web_url + "' target='_blank'>";
+
+                if (dataArrayValue.multimedia.length != 0) {
+                    buildTheHtmlOutput += '<img src="http://www.nytimes.com/' + dataArrayValue.multimedia[0].url + '">';
+                } else {
+                    buildTheHtmlOutput += '<img src="images/no-image.png">';
+                }
+
+                buildTheHtmlOutput += "</a>";
+                buildTheHtmlOutput += '</div>';
+            }
+        });
+        $(outcome).html(buildTheHtmlOutput);
+        $('.result-page').show();
+        $('#result-section').show();
+    }).fail(function (jqXHR, error, errorThrown) {
+        console.log(jqXHR);
+        console.log(error);
+        console.log(errorThrown);
+    });
+});
