@@ -1,6 +1,6 @@
 # News Beast
 
-News Beast is an interactive full-stack web app that provides to user with the latest sport and art news. In addition app lets user to get a top news for specific date, like user's birthday.
+News Beast is an interactive full-stack web app that provides the user with the latest sports and art news. In addition the app lets user to get the top news for specific date, like a user's birthday.
 
 ## Screenshots
 

@@ -17,6 +17,7 @@ h4 {
     font-weight: bold;
     padding: 2px;
     color: #7b5f5f;
+    padding-bottom: 90px;
 }
 
 .logo-header {
@@ -174,7 +175,7 @@ img {
 }
 
 .introA {
-    font-size: 130px;
+    font-size: 120px;
     white-space: nowrap;
     font-family: AvenirNextBold;
 }
@@ -268,7 +269,6 @@ img {
 }
 
 .login-page {
-    background: url(../images/login.jpg) no-repeat;
     width: 100%;
     background-size: cover;
     background-position: center center;
@@ -383,6 +383,21 @@ img {
     .col {
         width: 18%;
     }
+
+    .introA {
+        font-size: 92px;
+        padding-bottom: 12px;
+        padding-top: 64px;
+    }
+
+    .introB {
+        font-size: 40px;
+    }
+
+    .container h4 {
+        font-size: 18px;
+        padding-bottom: 200px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -395,27 +410,24 @@ img {
     }
 
     #intro-section .container {
-        margin-top: 80px;
+        margin-top: 70px;
     }
 
     .container h1 {
         font-size: 45px;
         margin-left: 30px;
         margin-top: 110px;
-        padding-bottom: 70px;
-        font-weight: 550;
+        padding-bottom: 8px;
     }
 
     .container h2 {
         font-size: 35px;
         margin-left: 30px;
-        margin-bottom: 60px;
         padding-top: 4px;
     }
 
     .container h4 {
         margin-left: 30px;
-        margin-top: -30px;
         font-size: 20px;
     }
 
@@ -502,19 +514,8 @@ img {
         margin-top: 80px;
     }
 
-    .container h1 {
-        font-size: 45px;
-        margin-left: 30px;
-        margin-top: 110px;
-        padding-bottom: 70px;
-        font-weight: 550;
-    }
-
     .container h2 {
         font-size: 35px;
-        margin-left: 30px;
-        margin-bottom: 48px;
-        padding-top: 4px;
     }
 
     .container h4 {
@@ -609,17 +610,11 @@ img {
 
     .container h1 {
         font-size: 45px;
-        margin-left: 30px;
-        margin-top: 110px;
-        padding-bottom: 70px;
-        font-weight: 550;
     }
 
     .container h2 {
         font-size: 35px;
-        margin-left: 30px;
-        margin-bottom: 70px;
-        padding-top: 10px;
+        margin-bottom: 48px;
     }
 
     .container h4 {
