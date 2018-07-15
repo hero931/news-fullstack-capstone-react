@@ -70,7 +70,7 @@ function sportDataFromNyt() {
                 if (dataArrayValue.multimedia.length != 0) {
                     buildTheHtmlOutput += '<input type="hidden" class="addToSportListImage" value="' + dataArrayValue.multimedia[0].url + '">';
                 } else {
-                    buildTheHtmlOutput += '<input type="hidden" class="addToSportListImage" value="images/no-image.png">';
+                    buildTheHtmlOutput += '<input type="hidden" class="addToSportListImage" value="assets/images/no-image.png">';
                 }
                 buildTheHtmlOutput += '<button type="submit" class="addToFavListButton">';
                 buildTheHtmlOutput += '<i class="fa fa-plus-square-o" aria-hidden="true"></i>';
@@ -80,7 +80,7 @@ function sportDataFromNyt() {
                 if (dataArrayValue.multimedia.length != 0) {
                     buildTheHtmlOutput += '<img src="' + dataArrayValue.multimedia[0].url + '">';
                 } else {
-                    buildTheHtmlOutput += '<img src="images/no-image.png">';
+                    buildTheHtmlOutput += '<img src="assets/images/no-image.png">';
                 }
                 buildTheHtmlOutput += "</a>";
                 buildTheHtmlOutput += '</div>';
@@ -113,7 +113,7 @@ $(document).on('submit', '.addToSportList', function (event) {
         dataType: 'json',
         contentType: 'application/json',
         data: JSON.stringify(sportObject),
-        url: '/add-to-sport-list/',
+        url: 'https://news-fullstack-capstone.herokuapp.com/add-to-sport-list/',
     })
         .done(function (result) {
         console.log(result);
@@ -162,7 +162,7 @@ function artDataFromNyt() {
                 if (dataArrayValue.multimedia.length != 0) {
                     buildTheHtmlOutput += '<input type="hidden" class="addToArtsListImage" value="' + dataArrayValue.multimedia[0].url + '">';
                 } else {
-                    buildTheHtmlOutput += '<input type="hidden" class="addToArtsListImage" value="images/no-image.png">';
+                    buildTheHtmlOutput += '<input type="hidden" class="addToArtsListImage" value="assets/images/no-image.png">';
                 }
                 buildTheHtmlOutput += '<button type="submit" class="addToFavListButton">';
                 buildTheHtmlOutput += '<i class="fa fa-plus-square-o" aria-hidden="true"></i>';
@@ -172,7 +172,7 @@ function artDataFromNyt() {
                 if (dataArrayValue.multimedia.length != 0) {
                     buildTheHtmlOutput += '<img src="' + dataArrayValue.multimedia[0].url + '">';
                 } else {
-                    buildTheHtmlOutput += '<img src="images/no-image.png">';
+                    buildTheHtmlOutput += '<img src="assets/images/no-image.png">';
                 }
                 buildTheHtmlOutput += "</a>";
                 buildTheHtmlOutput += '</div>';
@@ -205,7 +205,7 @@ $(document).on('submit', '.addToArtsList', function (event) {
         dataType: 'json',
         contentType: 'application/json',
         data: JSON.stringify(artsObject),
-        url: '/add-to-arts-list/',
+        url: 'https://news-fullstack-capstone.herokuapp.com/add-to-arts-list/',
     })
         .done(function (result) {
         console.log(result);
@@ -254,7 +254,7 @@ function politicsDataFromNyt() {
                 if (dataArrayValue.multimedia.length != 0) {
                     buildTheHtmlOutput += '<input type="hidden" class="addToPoliticsListImage" value="' + dataArrayValue.multimedia[0].url + '">';
                 } else {
-                    buildTheHtmlOutput += '<input type="hidden" class="addToPoliticsListImage" value="images/no-image.png">';
+                    buildTheHtmlOutput += '<input type="hidden" class="addToPoliticsListImage" value="assets/images/no-image.png">';
                 }
                 buildTheHtmlOutput += '<button type="submit" class="addToFavListButton">';
                 buildTheHtmlOutput += '<i class="fa fa-plus-square-o" aria-hidden="true"></i>';
@@ -264,7 +264,7 @@ function politicsDataFromNyt() {
                 if (dataArrayValue.multimedia.length != 0) {
                     buildTheHtmlOutput += '<img src="' + dataArrayValue.multimedia[0].url + '">';
                 } else {
-                    buildTheHtmlOutput += '<img src="images/no-image.png">';
+                    buildTheHtmlOutput += '<img src="assets/images/no-image.png">';
                 }
                 buildTheHtmlOutput += "</a>";
                 buildTheHtmlOutput += '</div>';
@@ -297,7 +297,7 @@ $(document).on('submit', '.addToPoliticsList', function (event) {
         dataType: 'json',
         contentType: 'application/json',
         data: JSON.stringify(politicsObject),
-        url: '/add-to-politics-list/',
+        url: 'https://news-fullstack-capstone.herokuapp.com/add-to-politics-list/',
     })
         .done(function (result) {
         console.log(result);
@@ -349,7 +349,7 @@ function businessDataFromNyt() {
                 if (dataArrayValue.multimedia.length != 0) {
                     buildTheHtmlOutput += '<input type="hidden" class="addToBusinessListImage" value="' + dataArrayValue.multimedia[0].url + '">';
                 } else {
-                    buildTheHtmlOutput += '<input type="hidden" class="addToBusinessListImage" value="images/no-image.png">';
+                    buildTheHtmlOutput += '<input type="hidden" class="addToBusinessListImage" value="assets/images/no-image.png">';
                 }
                 buildTheHtmlOutput += '<button type="submit" class="addToFavListButton">';
                 buildTheHtmlOutput += '<i class="fa fa-plus-square-o" aria-hidden="true"></i>';
@@ -359,7 +359,7 @@ function businessDataFromNyt() {
                 if (dataArrayValue.multimedia.length != 0) {
                     buildTheHtmlOutput += '<img src="' + dataArrayValue.multimedia[0].url + '">';
                 } else {
-                    buildTheHtmlOutput += '<img src="images/no-image.png">';
+                    buildTheHtmlOutput += '<img src="assets/images/no-image.png">';
                 }
                 buildTheHtmlOutput += "</a>";
                 buildTheHtmlOutput += '</div>';
@@ -392,7 +392,7 @@ $(document).on('submit', '.addToBusinessList', function (event) {
         dataType: 'json',
         contentType: 'application/json',
         data: JSON.stringify(businessObject),
-        url: '/add-to-business-list/',
+        url: 'https://news-fullstack-capstone.herokuapp.com/add-to-business-list/',
     })
         .done(function (result) {
         console.log(result);
@@ -417,7 +417,7 @@ function populateFavoriteList() {
     let outcome = $('#result-section-favorites .col-favorite');
     $.ajax({
         type: 'GET',
-        url: '/populate-favorites-list',
+        url: 'https://news-fullstack-capstone.herokuapp.com/populate-favorites-list',
         dataType: 'json',
         category: 'sport'
 
@@ -462,7 +462,7 @@ $(document).on('submit', '.deleteFavoritesListForm', function (event) {
         method: 'DELETE',
         dataType: 'json',
         contentType: 'application/json',
-        url: '/delete-from-favorites-list/' + itemIdToDelete,
+        url: 'https://news-fullstack-capstone.herokuapp.com/delete-from-favorites-list/' + itemIdToDelete,
     })
         .done(function (result) {
         populateFavoriteList();
@@ -524,7 +524,7 @@ $(document).on('submit', '#login_form', function (event) {
                 if (dataArrayValue.multimedia.length != 0) {
                     buildTheHtmlOutput += '<img src="http://www.nytimes.com/' + dataArrayValue.multimedia[0].url + '">';
                 } else {
-                    buildTheHtmlOutput += '<img src="images/no-image.png">';
+                    buildTheHtmlOutput += '<img src="assets/images/no-image.png">';
                 }
 
                 buildTheHtmlOutput += "</a>";
